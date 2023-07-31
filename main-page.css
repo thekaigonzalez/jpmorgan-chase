@@ -1,0 +1,78 @@
+body {
+  background-color: #570600;
+  padding: 1em;
+  scroll-behavior: smooth;
+}
+
+p, li, a {
+  font-size: 17px;
+  text-shadow: 1px 1px 10px #ebebeb;
+  text-align: center;
+}
+h2, h1 {
+  font-size: 30px;
+  text-shadow: 1px 1px 10px #ebebeb;
+  text-align: center;
+}
+a {
+  text-align: center;
+  text-decoration: none;
+  color: #ebebeb; 
+}
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+@keyframes swing { 
+   20% { transform: rotate(1deg) ; } 
+   40% { transform: rotate(-1deg); } 
+   60% { transform: rotate(1deg); } 
+   80% { transform: rotate(-1deg); } 
+   100% { transform: rotate(1deg); } 
+} 
+
+#first_body, #second_body {
+  box-shadow: 1px 4px 30px #470000;
+  animation: floating 5s ease-in-out infinite;
+}
+
+#first_body {
+  background-color: #690000;
+  border-radius: 25px;
+  padding: 1em;
+}
+
+ 
+#second_body {
+  background-color: #690000;
+  border-radius: 25px;
+  padding: 1em;
+}
+
+.grey {
+  filter: grayscale();
+}
+
+a {
+  box-shadow: inset 0 0 0 0 #ababab;
+  color: #ababab;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+a:hover {
+  box-shadow: inset 400px 0 0 0 #ababab;
+  color: white;
+}
+
