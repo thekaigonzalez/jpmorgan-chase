@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: #570600;
+  background-color: #111111;
   padding: 1em;
   scroll-behavior: smooth;
 }
@@ -12,14 +12,14 @@ p,
 li,
 a {
   font-size: 17px;
-  text-shadow: 1px 1px 10px #ebebeb;
+  text-shadow: 1px 1px 10px #2f2f2f;
   text-align: center;
 }
 
 h2,
 h1 {
   font-size: 30px;
-  text-shadow: 1px 1px 10px #ebebeb;
+  text-shadow: 1px 1px 10px #343434;
   text-align: center;
 }
 
@@ -28,6 +28,10 @@ a {
   text-decoration: none;
   color: #ebebeb;
 }
+
+/* hr {
+  border-top: 1px solid #252525;
+} */
 
 .floating {
   animation-name: floating;
@@ -76,7 +80,7 @@ a {
 
 #first_body,
 #second_body {
-  box-shadow: 1px 4px 30px #470000;
+  box-shadow: 1px 4px 30px #131313;
   /* animation: floating 5s ease-in-out infinite; */
   width: 700px;
   transition: transform 1s;
@@ -90,14 +94,14 @@ a {
 }
 
 #first_body {
-  background-color: #690000;
+  background-color: #252525;
   border-radius: 25px;
   padding: 1em;
 }
 
 
 #second_body {
-  background-color: #690000;
+  background-color: #252525;
   border-radius: 25px;
   padding: 1em;
 }
@@ -115,6 +119,6 @@ a {
 }
 
 a:hover {
-  box-shadow: inset 400px 0 0 0 #ababab;
+  box-shadow: inset 400px 0 0 0 #ff8080;
   color: white;
 }
